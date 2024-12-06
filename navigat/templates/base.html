@@ -1,0 +1,29 @@
+{% import "macros.html" as macros %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{% block title %}{{ title }}{% endblock title %}</title>
+</head>
+
+<body>
+<header>
+{% include "_navigation.html" %}
+</header>
+{% block content %}
+<h1>Welcome to {{ title }}!</h1>
+<div class="test">
+    <style>
+        .test{
+            height: 500px;
+        }
+    </style>
+    <a href="#">HIKLLHYGHUYK</a>
+</div>
+{% endblock content %}
+
+</body>
+<footer>
+    {{macros.light_dark_theme("div")}}
+</footer>
+</html>
